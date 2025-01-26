@@ -19,21 +19,38 @@
       crossorigin="anonymous"
     ></script>
     <section id="todo-input">
-      <h2 class="text-center">Add a new book</h2>
+      <form class="row g-2">
+        <h2 class="fs-1 text-center mx-auto mt-5">Add a new book</h2>
+        <div class="col-md-6">
+          <label for="inputTitle" class="fs-3 form-label">titile</label>
+          <input class="form-control" type="text" />
+        </div>
+        <div class="col-md-6">
+          <label for="inputAuthor" class="fs-3 form-label">author</label>
+          <input class="form-control" type="text" />
+        </div>
+        <div class="col-md-12">
+          <lebel for="inputDescription" class="fs-3 form-label"
+            >Description</lebel
+          >
+          <input class="form-control" type="text" />
+        </div>
+        <div class="col-md-4">
+          <label class="fs-3">Genre/Category</label>
+          <select class="form-select">
+            <option value="novel">novel</option>
+            <option value="technical-book">technical-book</option>
+          </select>
+        </div>
 
-      <label>titile</label>
-      <input type="text" />
-      <label>author</label>
-      <input type="text" />
-      <label>Genre/Category</label>
-      <select>
-        <option value="novel">novel</option>
-        <option value="technical-book">technical-book</option>
-      </select>
-      <lebel>Description</lebel>
-      <input type="text" />
-      <label>Rating</label>
-      <input type="text" />
+        <div class="col-md-4">
+          <label class="fs-3">Rating</label>
+          <input class="form-control" type="text" />
+        </div>
+        <button class="btn btn-dark btn-lg col-5 mx-auto" type="submit">
+          Add
+        </button>
+      </form>
     </section>
   </body>
 </html>
